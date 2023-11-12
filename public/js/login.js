@@ -3,7 +3,7 @@ const inner_container = document.querySelector('.inner--box ');
 
 const login = async (email, password) => {
   try {
-    const fetchedData = await fetch('http://127.0.0.1:9000/api/login', {
+    const fetchedData = await fetch('https://easy-chat-dg83.onrender.com/api/login', {
       method: 'POST',
       url: 'http://127.0.0.1:9000/api/login',
       headers: { 'Content-type': 'application/json' },
