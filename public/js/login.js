@@ -14,14 +14,14 @@ const login = async (email, password) => {
     if (jsonData.status !== 'failed') {
       // alert('Login successful');
       window.setTimeout(() => {
-        location.href = 'http://127.0.0.1:9000';
+        location.href = 'https://easy-chat-dg83.onrender.com/';
       }, 1500);
     } else {
       alert(jsonData.message);
       throw new Error(jsonData.message);
     }
   } catch (err) {
-    location.href = 'http://127.0.0.1:9000/login';
+    location.href = 'https://easy-chat-dg83.onrender.com/login';
     console.log(err.message);
   }
 };
