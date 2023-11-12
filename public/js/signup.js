@@ -11,7 +11,7 @@ const signup = async (name, email, password) => {
     spinner.classList.add('loader');
     inner_container.appendChild(spinner);
 
-    const fetchData = await fetch('http://127.0.0.1:9000/api/signup', {
+    const fetchData = await fetch('https://easy-chat-dg83.onrender.com/api/signup', {
       method: 'POST',
       url: 'http://127.0.0.1:9000/api/signup',
       headers: {
