@@ -49,7 +49,7 @@ const handlefriend = (btns) => {
 };
 
 const sendAddfriendRequest = async (id, name) => {
-  const sendRequest = await fetch(`http://127.0.0.1:9000/api/addfriend/${id}`, {
+  const sendRequest = await fetch(`https://easy-chat-dg83.onrender.com/api/addfriend/${id}`, {
     method: 'POST',
   });
   const jsonData = await sendRequest.json();
