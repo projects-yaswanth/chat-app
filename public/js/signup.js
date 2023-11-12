@@ -24,13 +24,13 @@ const signup = async (name, email, password) => {
 
     if (jsonData.status !== 'failed') {
       alert('Account created successfully ');
-      window.location.href = 'http://127.0.0.1:9000/login';
+      window.location.href = 'https://easy-chat-dg83.onrender.com/login';
     } else {
       throw new Error(jsonData.message);
     }
   } catch (err) {
     alert(err.message);
-    location.href = 'http://127.0.0.1:9000/signup';
+    location.href = 'https://easy-chat-dg83.onrender.com/signup';
     console.log(err.message);
   }
 };
