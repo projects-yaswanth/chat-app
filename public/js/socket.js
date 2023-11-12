@@ -24,7 +24,7 @@ const mymsgbody = (message) => `
 
 const saveMsg = async (message, friend) => {
   try {
-    const fetchData = await fetch(`http://127.0.0.1:9000/chats/${friend}`, {
+    const fetchData = await fetch(`https://easy-chat-dg83.onrender.com/chats/${friend}`, {
       method: 'POST',
       headers: {
         'Content-type': 'application/json',
