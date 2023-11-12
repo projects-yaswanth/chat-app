@@ -5,7 +5,7 @@ const login = async (email, password) => {
   try {
     const fetchedData = await fetch('https://easy-chat-dg83.onrender.com/api/login', {
       method: 'POST',
-      url: 'http://127.0.0.1:9000/api/login',
+      url: 'https://easy-chat-dg83.onrender.com/api/login',
       headers: { 'Content-type': 'application/json' },
       body: JSON.stringify({ email, password }),
     });
