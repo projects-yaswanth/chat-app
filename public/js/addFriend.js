@@ -5,7 +5,7 @@ const user = document.querySelector('.card').dataset.user;
 const getUsers = async () => {
   let users;
   try {
-    const usersData = await fetch('http://127.0.0.1:9000/api', {
+    const usersData = await fetch('https://easy-chat-dg83.onrender.com/api', {
       method: 'GET',
     });
     users = await usersData.json();
