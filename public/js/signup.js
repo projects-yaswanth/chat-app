@@ -13,7 +13,7 @@ const signup = async (name, email, password) => {
 
     const fetchData = await fetch('https://easy-chat-dg83.onrender.com/api/signup', {
       method: 'POST',
-      url: 'http://127.0.0.1:9000/api/signup',
+      url: 'https://easy-chat-dg83.onrender.com/api/signup',
       headers: {
         'Content-type': 'application/json',
       },
