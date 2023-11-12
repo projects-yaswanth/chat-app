@@ -1,0 +1,39 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Chat App | #{title}
+        block favicon 
+            link(rel="shortcut icon", href="svg/favicon.ico", type="image/x-icon")
+        block links 
+            link(rel="stylesheet", href="css/index.css")
+    body 
+        include navigation 
+
+        block content 
+            div.middle--section
+                h1.friends--tag friends 😍
+                if(user) 
+                    a(href="/addfriend").link  
+                        button.btn--login.nav--btns + add friend
+
+            .container 
+                if(!user)
+                    h1.message Please login to see your friends 
+                    h1.emoji 😊
+                else if(user.friends.length === 0) 
+                    h1.message Add friends to get started 
+                    h1.emoji 😉
+                else 
+                    ul.chats 
+                        each friend in user.friends
+                            li.chat 
+                                a.chat--link(href="/chats/"  + friend.name)=friend.name 
+                   
+
+
+
+
+        block scripts 
+            script(src="js/index.js")

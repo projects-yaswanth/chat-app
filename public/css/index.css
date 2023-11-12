@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300;500;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  background-color: #7c9d96;
+  color: #f4f2de;
+  font-family: 'Merienda', cursive;
+}
+
+.navigation--menu {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 8rem;
+}
+
+.logo--name {
+  font-size: 2.3rem;
+}
+
+.logo--link {
+  color: #f4f2de;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navigations {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.links {
+  list-style: none;
+  height: 3rem;
+  width: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.links:first-child {
+  font-size: 1.3rem;
+}
+
+.link,
+.nav--btns {
+  height: inherit;
+  width: inherit;
+  border-radius: 10px;
+}
+
+.nav--btns {
+  background-color: transparent;
+  color: #f4f2de;
+  border: 2px solid #f4f2de;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.nav--btns:hover {
+  background-color: #f4f2de;
+  color: #7c9d96;
+  transition: 0.5s all ease-in-out;
+}
+
+.container {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.emoji {
+  font-size: 5rem;
+}
+
+.chats {
+  min-height: 90%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.chat {
+  background-color: orange;
+  min-height: 8rem;
+  min-width: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  list-style: none;
+  padding: 1rem;
+}
+
+.chat--link {
+  text-decoration: none;
+  color: #f4f2de;
+  font-size: 1.2rem;
+}
+
+.middle--section {
+  padding: 2rem 4rem;
+  height: 8rem;
+}
+
+.friends--tag {
+  display: inline-flex;
+}
+
+.middle--section .link {
+  height: 3rem;
+  width: 5rem;
+  margin: 0 2rem;
+}
+
+.middle--section .nav--btns {
+  width: 10rem;
+}
+
+@media screen and (max-width: 600px) {
+  .message {
+    font-size: 1.3rem;
+  }
+
+  .navigation--menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    height: 15rem;
+  }
+
+  .container {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .chats {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

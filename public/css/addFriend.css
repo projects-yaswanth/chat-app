@@ -1,0 +1,72 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: -50px;
+  min-height: 75vh;
+  padding: 3rem;
+}
+
+.input--div {
+  display: flex;
+  justify-content: center;
+  height: 4rem;
+}
+
+.inputs {
+  height: inherit;
+  width: 50%;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+}
+
+.inputs:focus,
+.inputs:active {
+  outline: none;
+  border: none;
+}
+
+.card {
+  height: 20rem;
+  width: 20rem;
+  place-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 2px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.user {
+  height: inherit;
+  background-color: #a1ccd1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.link--adduser {
+  width: inherit;
+}
+
+.adduser--btn {
+  width: inherit;
+  height: 3rem;
+  cursor: pointer;
+  background-color: white;
+  outline: none;
+  border: none;
+}
+
+@media screen and (max-width: 600px) {
+  .inputs {
+    width: 70%;
+  }
+  .container {
+    grid-template-columns: 1fr;
+  }
+}

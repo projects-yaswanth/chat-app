@@ -1,0 +1,17 @@
+nav.navigation--menu 
+    h1.logo--name 
+        a(href="/").logo--link Chat App  
+    ul.navigations 
+        if user 
+            li.links=user.name
+            li.links.logout     
+                a(href="/logout").link  
+                    button.btn--logout.nav--btns Logout
+        else 
+            li.links.login 
+                a(href="/login").link  
+                    button.btn--login.nav--btns Login
+            li.links.signup 
+                a(href="/signup").link  
+                    button.btn--signup.nav--btns signup
+            

@@ -1,0 +1,17 @@
+extends index 
+
+
+block append links 
+    link(rel="stylesheet", href="css/addFriend.css")
+
+
+block content 
+    .input--div
+        input(type="text" placeholder="search here").inputs
+    .container 
+        .card(data-user=user)
+            //- .user 
+            //- button(type="submit").adduser--btn Add User 
+
+block append scripts 
+    script(src="js/addFriend.js") 

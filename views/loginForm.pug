@@ -1,0 +1,22 @@
+extends index 
+
+block append links 
+    link(rel="stylesheet", href="css/loginForm.css")
+
+block content 
+    .container 
+        .inner--box 
+            h1.heading Login
+            label(for="email").labels email 
+            input(type="email" id="email" placeholder="example@gmail.com" name="email").inputs
+            label(for="password").labels password 
+            input(type="password" id="password" placeholder="••••••••••••••••" name="password").inputs 
+            .botton--container  
+                button(type="submit").btn--submit Login 
+                a(href="#").forgot--link forgot Password?
+            .signup 
+                p.query--text Not yet Registered? sign up 
+                    a(href="/signup").forgot--link Here  
+
+block append scripts
+    script(src="js/login.js") 

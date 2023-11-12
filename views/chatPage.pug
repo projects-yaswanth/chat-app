@@ -1,0 +1,37 @@
+extends index 
+
+block favicon 
+    link(rel="shortcut icon", href="../svg/favicon.ico", type="image/x-icon")
+
+
+block  links
+    link(rel="stylesheet", href="../css/index.css")
+    link(rel="stylesheet", href="../css/chatPage.css")
+
+block content 
+    .container 
+
+        h1.friend--name= friend.name
+        .messages--container 
+            each msg in messages
+                if(msg.sender === user.name)
+                    .msg--outer.right--align    
+                        .message--template.right--border
+                            p.message--body= msg.message    
+                            p.time 9:15
+                else 
+                    .msg--outer 
+                        .message--template 
+                            p.message--body= msg.message 
+                            p.time 9:15
+
+
+        .render--msg 
+            input(type="text").msg--input
+            button(type="submit").msg--btn send
+
+block scripts 
+    //- <script src="/socket.io/socket.io.js"></script>
+    script(src="/socket.io/socket.io.js") 
+    script(src="../js/index.js") 
+    script(src="../js/socket.js")

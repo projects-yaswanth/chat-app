@@ -1,0 +1,23 @@
+extends index 
+
+block append links
+        link(rel="stylesheet", href="css/signUpForm.css")
+
+
+block content 
+    .container
+        .innner--container 
+            //- form(action="").submit--form
+            h1.heading signup
+            label(for="username").labels username 
+            input(type="text" placeholder="username" name="username" id="username").inputs
+            label(for="email").labels email 
+            input(type="text" placeholder="email" name="email" id="email").inputs
+            label(for="password").labels password 
+            input(type="password" placeholder="password" name="password" id="password").inputs
+            button(type="submit").btn--submit create  
+            p.query--text Already have an account? Login 
+                a(href="/login") Here 
+
+block append scripts 
+    script(src="js/signup.js" type="module") 
